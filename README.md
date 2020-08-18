@@ -23,7 +23,7 @@ GitHub Action for Treasure Workflow, for performing a task to push a project to 
 ```
 - uses: actions/checkout@v2
 - name: "td wf push"
-    uses: toru-takahashi/tdw-actions@master
+    uses: treasuredataps/tdw-actions@master
     with:
         td_master_apikey: ${{ secrets.td_master_apikey }}
         td_wf_project_names: your_workflow_name 

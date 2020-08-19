@@ -12,9 +12,7 @@ inputs:
   td_wf_project_name:
     description: 'Treasure Workflow Project Name'
     required: true
-  github_path:
-    description: 'Path of project within repo'
-    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -22,7 +20,6 @@ runs:
     td_wf_endpoint: ${{ inputs.td_wf_endpoint }}
     td_master_apikey: ${{ inputs.td_master_apikey }}
     td_wf_project_name: ${{ inputs.td_wf_project_name }}
-    github_path: ${{ inputs.github_path }}
 
 branding:
   icon: 'check'
